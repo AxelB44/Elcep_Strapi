@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artistes",
+  "info": {
+    "singularName": "artiste",
+    "pluralName": "artistes",
+    "displayName": "Artiste",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Reseau": {
+      "type": "component",
+      "repeatable": true,
+      "component": "artiste.reseaux-social"
+    }
+  }
+}

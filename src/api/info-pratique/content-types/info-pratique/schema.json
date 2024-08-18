@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "info_pratiques",
+  "info": {
+    "singularName": "info-pratique",
+    "pluralName": "info-pratiques",
+    "displayName": "Info Pratique",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Texte": {
+      "type": "richtext"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Maps": {
+      "type": "customField",
+      "customField": "plugin::google-maps.location-picker",
+      "optionsDefaultLng": "-1.7131451864911207",
+      "optionsDefaultLat": "47.511915065112504"
+    },
+    "Categorie": {
+      "type": "enumeration",
+      "enum": [
+        "Localisation",
+        "Sur place",
+        "Restauration",
+        "Zone de nuit",
+        "Eco-Festival",
+        "FAQ"
+      ],
+      "required": true
+    },
+    "Titre_Question": {
+      "type": "string"
+    }
+  }
+}

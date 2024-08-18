@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_content_reseaux_socials",
+  "info": {
+    "displayName": "Réseau social",
+    "icon": "twitter",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "URL": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Platforme": {
+      "type": "enumeration",
+      "enum": [
+        "Facebook",
+        "Spotify",
+        "Twitter",
+        "Instagram"
+      ],
+      "required": true
+    }
+  }
+}
